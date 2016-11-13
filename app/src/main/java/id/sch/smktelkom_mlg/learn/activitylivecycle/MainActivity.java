@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "onResume: ");
-        //mediaPlayer.start();
+        mediaPlayer.start();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         Log.d(TAG, "onPause: ");
-        //mediaPlayer.pause();
+        mediaPlayer.pause();
     }
 
     @Override
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy: ");
-        /*if (mediaPlayer != null)
-            mediaPlayer.release();*/
+        if (mediaPlayer != null)
+            mediaPlayer.release();
     }
 }
